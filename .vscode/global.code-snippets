@@ -1,0 +1,52 @@
+{
+	"logThis": {
+		"scope": "javascript,typescript",
+		"prefix": "logthis",
+		"body": ["console.log('${1:this}: ', ${1:this});"]
+	},
+	"translation": {
+		"scope": "typescript",
+		"prefix": ["i18n", "translation", "translate"],
+		"body": [
+			"/* eslint-disable quotes */",
+			"import type { Language } from '@core/interfaces';",
+			"",
+			"export default {",
+			"    pt: {",
+			"        ${1:'main.key.variant': 'translated value'}",
+			"    },",
+			"    ne: {",
+			"        ${2:'main.key.variant': 'translated value'}",
+			"    },",
+			"    en: {",
+			"        ${3:'main.key.variant': 'translated value'}",
+			"    },",
+			"    es: {",
+			"        ${4:'main.key.variant': 'translated value'}",
+			"    },",
+			"    fr: {",
+			"        ${5:'main.key.variant': 'translated value'}",
+			"    },",
+			"    it: {",
+			"        ${6:'main.key.variant': 'translated value'}",
+			"    },",
+			"    de: {",
+			"        ${7:'main.key.variant': 'translated value'}",
+			"    },",
+			"    ru: {",
+			"        ${8:'main.key.variant': 'translated value'}",
+			"    },",
+			"    ja: {",
+			"        ${9:'main.key.variant': 'translated value'}",
+			"    },",
+			"    ko: {",
+			"        ${10:'main.key.variant': 'translated value'}",
+			"    },",
+			"    zh: {",
+			"        ${11:'main.key.variant': 'translated value'}",
+			"    },",
+			"} as Record<Language, Record<string, string>>;",
+			""
+		]
+	}
+}

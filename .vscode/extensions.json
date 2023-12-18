@@ -1,0 +1,4 @@
+{
+	"recommendations": ["dbaeumer.vscode-eslint", "bradlc.vscode-tailwindcss", "editorconfig.editorconfig", "svelte.svelte-vscode", "esbenp.prettier-vscode", "csstools.postcss"],
+	"unwantedRecommendations": []
+}

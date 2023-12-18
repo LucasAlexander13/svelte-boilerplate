@@ -1,0 +1,20 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"useDefineForClassFields": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"removeComments": true,
+		"declaration": false,
+		"importHelpers": true
+	},
+	"include": ["./svelte-kit/ambient.d.ts", "./.svelte-kit/types/**/$types.d.ts", "./vite.config.ts", "./source/**/*.ts", "./source/**/*.svelte"]
+}

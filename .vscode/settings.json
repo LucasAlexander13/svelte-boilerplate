@@ -1,0 +1,268 @@
+{
+	/* ———————————————————————————— Editor ——————————————————————————— */
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
+	"editor.stickyScroll.enabled": true,
+	"editor.renderWhitespace": "boundary",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.formatOnSave": false,
+	"files.autoSave": "off",
+	"files.eol": "\r\n",
+	/* —————————————————————————— Formatting ————————————————————————— */
+	"eslint.validate": ["typescript", "svelte"],
+	"prettier.documentSelectors": ["**/*.svelte"],
+	"[json]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[svelte]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	/* ————————————————————————— Spell Check ————————————————————————— */
+	"cSpell.language": "en,pt,pt-BR",
+	"cSpell.languageSettings": [
+		{
+			"languageId": "typescript, javascript, svelte",
+			"includeRegExpList": ["CStyleComment"]
+		},
+		{
+			"languageId": "json, jsonc",
+			"ignoreRegExpList": ["string"]
+		}
+	],
+	"cSpell.words": ["Populis", "tailwindcss"],
+	/* ———————————————————————— Visualization ———————————————————————— */
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.productIconTheme": "fluent-icons",
+	"material-icon-theme.activeIconPack": "none",
+	"material-icon-theme.folders.theme": "specific",
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"material-icon-theme.folders.associations": {
+		"components": "plugin",
+		"interfaces": "docs",
+		"stores": "context",
+		"flows": "middleware",
+		"static": "environment",
+		"flags": "examples",
+		"vectors": "svg",
+		"login": "auth"
+	},
+	"material-icon-theme.files.associations": {
+		/* ————— Core ————— */
+		"_index.ts": "typescript-def",
+		"*.props.ts": "apiblueprint",
+		"*.style.ts": "raml",
+		"*.store.ts": "key",
+		"*.utils.ts": "xml",
+		"*.i18n.ts": "diff",
+		/* ———— Pages ————— */
+		"*.page.svelte": "html",
+		/* ———— Server ———— */
+		"*.api.ts": "puppet",
+		"*.model.ts": "yaml",
+		"*.service.ts": "settings",
+		"*.interface.ts": "document",
+		/* ———— Tests ————— */
+		"*.assert.ts": "test-ts"
+	},
+	/* —————————————————————————— Comments ——————————————————————————— */
+	"better-comments.multilineComments": false,
+	"better-comments.tags": [
+		// $ indicar uma regra de negócio
+		{
+			"tag": "$",
+			"color": "#c792ea",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		// ! indica um alerta ou aviso importante sobre manutenção
+		{
+			"tag": "!",
+			"color": "#ff5874",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		// ? indica um motivo de implementação e Jira associado
+		{
+			"tag": "?",
+			"color": "#51c7da",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		// todo: indica uma implementação futura a ser desenvolvida
+		{
+			"tag": "todo",
+			"color": "#fdad5d",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		// fixme: indica uma medida paleativa e sugestão de correção
+		{
+			"tag": "fixme",
+			"color": "#007acc",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		// * usado para destacar um comentário genérico
+		{
+			"tag": "*",
+			"color": "#76c5a4",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		// // usado para destacar um código depreciado
+		{
+			"tag": "//",
+			"color": "#5e6173",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
+	/* —————————————————————————— Tailwind ——————————————————————————— */
+	"tailwindCSS.experimental.classRegex": [["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
+	"tailwindCSS.classAttributes": [
+		"class",
+		"accent",
+		"active",
+		"aspectRatio",
+		"background",
+		"badge",
+		"bgBackdrop",
+		"bgDark",
+		"bgDrawer",
+		"bgLight",
+		"blur",
+		"border",
+		"button",
+		"buttonAction",
+		"buttonBack",
+		"buttonClasses",
+		"buttonComplete",
+		"buttonDismiss",
+		"buttonNeutral",
+		"buttonNext",
+		"buttonPositive",
+		"buttonTextCancel",
+		"buttonTextConfirm",
+		"buttonTextFirst",
+		"buttonTextLast",
+		"buttonTextNext",
+		"buttonTextPrevious",
+		"buttonTextSubmit",
+		"caretClosed",
+		"caretOpen",
+		"chips",
+		"color",
+		"controlSeparator",
+		"controlVariant",
+		"cursor",
+		"display",
+		"element",
+		"fill",
+		"fillDark",
+		"fillLight",
+		"flex",
+		"gap",
+		"gridColumns",
+		"height",
+		"hover",
+		"indent",
+		"justify",
+		"meter",
+		"padding",
+		"position",
+		"regionBackdrop",
+		"regionBody",
+		"regionCaption",
+		"regionCaret",
+		"regionCell",
+		"regionChildren",
+		"regionCone",
+		"regionContent",
+		"regionControl",
+		"regionDefault",
+		"regionDrawer",
+		"regionFoot",
+		"regionFootCell",
+		"regionFooter",
+		"regionHead",
+		"regionHeadCell",
+		"regionHeader",
+		"regionIcon",
+		"regionInterface",
+		"regionInterfaceText",
+		"regionLabel",
+		"regionLead",
+		"regionLegend",
+		"regionList",
+		"regionNavigation",
+		"regionPage",
+		"regionPanel",
+		"regionRowHeadline",
+		"regionRowMain",
+		"regionSummary",
+		"regionSymbol",
+		"regionTab",
+		"regionTrail",
+		"ring",
+		"rounded",
+		"select",
+		"shadow",
+		"slotDefault",
+		"slotFooter",
+		"slotHeader",
+		"slotLead",
+		"slotMessage",
+		"slotMeta",
+		"slotPageContent",
+		"slotPageFooter",
+		"slotPageHeader",
+		"slotSidebarLeft",
+		"slotSidebarRight",
+		"slotTrail",
+		"spacing",
+		"text",
+		"track",
+		"width",
+		"zIndex"
+	]
+}
